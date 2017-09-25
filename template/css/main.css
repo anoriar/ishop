@@ -880,6 +880,8 @@ h2.title {
 
 
 .productinfo p{
+  white-space: nowrap;
+  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -888,7 +890,9 @@ h2.title {
 }
 
 .productinfo img{
-  width: 100%;
+
+    width: 100%;
+    
 }
 
 .productinfo{

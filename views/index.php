@@ -24,80 +24,23 @@
              <div class="col-sm-9 padding-right">
                  <div class="features_items"><!--features_items-->
                      <h2 class="title text-center">Последние товары</h2>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product1.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product2.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product3.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product4.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                                 <img src="images/home/new.png" class="new" alt="" />
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product5.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-sm-4">
-                         <div class="product-image-wrapper">
-                             <div class="single-products">
-                                 <div class="productinfo text-center">
-                                     <img src="images/home/product6.jpg" alt="" />
-                                     <h2>$56</h2>
-                                     <p>Easy Polo Black Edition</p>
-                                     <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-
+                      <?php 
+                        foreach($lastProductList as $item){
+                            echo "<div class='col-sm-4'>
+                                    <div class='product-image-wrapper'>
+                                        <div class='single-products'>
+                                            <div class='productinfo text-center'>
+                                                <img src='" . $item->getImage() . "' alt='' />
+                                                <h2>" . $item->getPrice() . " RUB</h2>
+                                                <p>" . $item->getName() . "</p>
+                                                <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>";
+                         }
+                     ?>
+                    
                  </div><!--features_items-->
 
                  <div class="recommended_items"><!--recommended_items-->
@@ -105,7 +48,8 @@
 
                      <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                          <div class="carousel-inner">
-                             <div class="item active">	
+                             <div class="item active">
+                                
                                  <div class="col-sm-4">
                                      <div class="product-image-wrapper">
                                          <div class="single-products">
@@ -136,7 +80,7 @@
                                          <div class="single-products">
                                              <div class="productinfo text-center">
                                                  <img src="images/home/recommend3.jpg" alt="" />
-                                                 <h2>$56</h2>
+                                                 <h2>$86</h2>
                                                  <p>Easy Polo Black Edition</p>
                                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                              </div>
@@ -150,7 +94,7 @@
                                          <div class="single-products">
                                              <div class="productinfo text-center">
                                                  <img src="images/home/recommend1.jpg" alt="" />
-                                                 <h2>$56</h2>
+                                                 <h2>$26</h2>
                                                  <p>Easy Polo Black Edition</p>
                                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                              </div>
@@ -162,7 +106,7 @@
                                          <div class="single-products">
                                              <div class="productinfo text-center">
                                                  <img src="images/home/recommend2.jpg" alt="" />
-                                                 <h2>$56</h2>
+                                                 <h2>$76</h2>
                                                  <p>Easy Polo Black Edition</p>
                                                  <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>В корзину</a>
                                              </div>
