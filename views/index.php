@@ -50,8 +50,14 @@
                         <div class="carousel-inner">
 
                             <?php
-                            echo "<div class='item active'>";
+                           
                             for($i = 0; $i < count($recommendedProductList); $i += 3){
+                                if($i == 0){
+                                    echo "<div class='item active'>";
+                                }
+                                else{
+                                    echo "<div class='item'>";
+                                }
                                 for($j = 0; $j < 3; $j++){
                                     $item = $lastProductList[$i + $j];
                                     echo "<div class='col-sm-4'>
@@ -68,12 +74,11 @@
                                         </div>";
                                 }
                                 echo "</div>";
-                                echo "<div class='item'>";
+                               
                             }
                            
                             ?>
                            
-                            </div>
                         </div>
                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
