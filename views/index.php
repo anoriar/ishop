@@ -7,42 +7,15 @@
                  <div class="left-sidebar">
                      <h2>Каталог</h2>
                      <div class="panel-group category-products">
-
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
-                         <div class="panel panel-default">
-                             <div class="panel-heading">
-                                 <h4 class="panel-title"><a href="#">Категория</a></h4>
-                             </div>
-                         </div>
+                         <?php 
+                            foreach($catList as $item){
+                                echo "<div class='panel panel-default'>
+                                        <div class='panel-heading'>
+                                            <h4 class='panel-title'><a href='#'>" . $item -> getName() . "</a></h4>
+                                        </div>
+                                    </div>";
+                         }
+                         ?>
                      </div>
 
                  </div>
