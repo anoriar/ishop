@@ -2,7 +2,7 @@
 /*************************
 *******Typography******
 **************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100&subset=latin,cyrillic-ext,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
@@ -729,10 +729,6 @@ h2.title:before{
   text-transform: uppercase;
 }
 
-.category-products .panel-default .panel-heading .panel-title a.active {
-  color: #FE980F;
-}
-
 .panel-group .panel-heading + .panel-collapse .panel-body {
   border-top: 0 none;
 }
@@ -880,19 +876,14 @@ h2.title {
 
 
 .productinfo p{
-  white-space: nowrap;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #696763;
-  height: 34px;
 }
 
 .productinfo img{
-
-    width: 100%;
-    
+  width: 100%;
 }
 
 .productinfo{
@@ -908,6 +899,7 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
+  opacity:;
 }
 
 .single-products:hover .product-overlay {

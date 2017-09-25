@@ -154,7 +154,7 @@
     </div>
 </footer>
 
-<script src="template/js/jquery-3.2.1.min.js"></script>
+<script src="template/js/jquery.js"></script>
 <script src="template/js/bootstrap.min.js"></script>
 <script src="template/js/jquery.scrollUp.min.js"></script>
 <script src="template/js/price-range.js"></script>
