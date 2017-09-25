@@ -30,8 +30,10 @@
                                     <div class='product-image-wrapper'>
                                         <div class='single-products'>
                                             <div class='productinfo text-center'>
-                                                <img src='" . $item->getImage() . "' alt='' />
-                                                <h2>" . $item->getPrice() . " RUB</h2>
+                                                <div class='img-wrapper'>
+                                                    <img src='" . $item->getImage() . "' alt='' />
+                                                </div>
+                                                <h2>" . number_format($item->getPrice(), 0, ',', ' ') . " RUB</h2>
                                                 <p>" . $item->getName() . "</p>
                                                 <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
                                             </div>
@@ -44,7 +46,7 @@
                 </div><!--features_items-->
 
                 <div class="recommended_items"><!--recommended_items-->
-                    <h2 class="title text-center">recommended items</h2>
+                    <h2 class="title text-center">Рекомендуемые товары</h2>
 
                     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -64,8 +66,10 @@
                                             <div class='product-image-wrapper'>
                                                 <div class='single-products'>
                                                     <div class='productinfo text-center'>
-                                                        <img src='" . $item->getImage() . "' alt='' />
-                                                        <h2>" . $item->getPrice() . " RUB</h2>
+                                                        <div class='img-wrapper'>
+                                                            <img src='" . $item->getImage() . "' alt='' />
+                                                        </div>
+                                                        <h2>" . number_format($item->getPrice(), 0, ',', ' ') . " RUB</h2>
                                                         <p>" . $item->getName() . "</p>
                                                         <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
                                                     </div>
