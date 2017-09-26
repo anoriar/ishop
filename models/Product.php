@@ -47,7 +47,7 @@ class Product{
         return $this->code;
     }
 
-        function getBrand() {
+    function getBrand() {
         return $this->brand;
     }
 
@@ -59,11 +59,11 @@ class Product{
         return $this->description;
     }
 
-    function getIs_new() {
+    function is_new() {
         return $this->is_new;
     }
 
-    function getIs_recommended() {
+    function is_recommended() {
         return $this->is_recommended;
     }
 

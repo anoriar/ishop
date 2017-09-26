@@ -11,22 +11,20 @@
                         foreach ($catList as $item) {
                             echo "<div class='panel panel-default'>
                                         <div class='panel-heading'>
-                                            <h4 class='panel-title'><a href='#'>" . $item->getName() . "</a></h4>
+                                            <h4 class='panel-title'><a href='/category/". $item->getId() ."'>" . $item->getName() . "</a></h4>
                                         </div>
                                     </div>";
                         }
                         ?>
                     </div>
-
                 </div>
             </div>
-
             <div class="col-sm-9 padding-right">
                 <div class="features_items"><!--features_items-->
                     <h2 class="title text-center">Последние товары</h2>
                     <?php
                     foreach ($lastProductList as $item) {
-                        echo "<div class='col-sm-4'>
+                        echo    "<div class='col-sm-4'>
                                     <div class='product-image-wrapper'>
                                         <div class='single-products'>
                                             <div class='productinfo text-center'>
@@ -36,13 +34,15 @@
                                                 <h2>" . number_format($item->getPrice(), 0, ',', ' ') . " RUB</h2>
                                                 <p>" . $item->getName() . "</p>
                                                 <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
-                                            </div>
-                                        </div>
+                                            </div>";
+                                            if($item->is_new()){
+                                               echo "<img src='images/views/index/new.png' class='new' alt=''>";
+                                            }
+                                        echo "</div>
                                     </div>
                                 </div>";
                     }
                     ?>
-
                 </div><!--features_items-->
 
                 <div class="recommended_items"><!--recommended_items-->
@@ -50,10 +50,8 @@
 
                     <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
-
                             <?php
-                           
-                            for($i = 0; $i < count($recommendedProductList); $i += 3){
+                              for($i = 0; $i < count($recommendedProductList); $i += 3){
                                 if($i == 0){
                                     echo "<div class='item active'>";
                                 }
@@ -80,9 +78,7 @@
                                 echo "</div>";
                                
                             }
-                           
                             ?>
-                           
                         </div>
                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
