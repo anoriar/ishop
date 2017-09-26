@@ -32,7 +32,7 @@
                                                     <img src='" . $item->getImage() . "' alt='' />
                                                 </div>
                                                 <h2>" . number_format($item->getPrice(), 0, ',', ' ') . " RUB</h2>
-                                                <p>" . $item->getName() . "</p>
+                                                <a href='/product/" . $item->getId() . "'><p>" . $item->getName() . "</p></a>
                                                 <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
                                             </div>";
                                             if($item->is_new()){
@@ -68,7 +68,7 @@
                                                             <img src='" . $item->getImage() . "' alt='' />
                                                         </div>
                                                         <h2>" . number_format($item->getPrice(), 0, ',', ' ') . " RUB</h2>
-                                                        <p>" . $item->getName() . "</p>
+                                                        <a href='/product/" . $item->getId() . "'><p>" . $item->getName() . "</p></a>
                                                         <a href='#' class='btn btn-default add-to-cart'><i class='fa fa-shopping-cart'></i>В корзину</a>
                                                     </div>
                                                 </div>

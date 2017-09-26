@@ -31,6 +31,11 @@ class Product{
         $this->status = $status;
     }
     
+    function getId() {
+        return $this->id;
+    }
+
+        
     function getName() {
         return $this->name;
     }
