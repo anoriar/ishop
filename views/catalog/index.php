@@ -1,6 +1,6 @@
 <?php require_once '/views/layouts/header.php' ?>
 
-<section>
+<section class="catalog">
     <div class="container">
         <div class="row">
             <div class="col-sm-3">

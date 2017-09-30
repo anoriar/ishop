@@ -27,4 +27,46 @@ $(document).ready(function(){
 	        zIndex: 2147483647 // Z-Index for the overlay
 		});
 	});
+
 });
+
+
+  $(function () {
+      $(".img-wrapper img").each(function() {
+        var img = $(this);
+        var wrapper = $(this).parent(this);
+        console.log(img.width());
+        console.log(img.height());
+        if(img.width() > wrapper.width()){
+            if(img.width() > img.height()){
+                var percent = (wrapper.height() * 100) / img.height();
+                var dx = img.width() - wrapper.width();
+                $(this).css({"max-height": "" + percent + "%"});
+            }
+            $(this).css({width: "100%"});
+        }
+        /*
+        if(img.width() >= img.height()){
+
+            if(img.width() > wrapper.width()){
+                 var percent = (wrapper.width() * 100) / img.width();
+                 $(this).css({"max-height": "" + 20 + "px"});
+            }
+            $(this).css({"max-width": "100%"});
+
+        } else{
+            if(img.height() > wrapper.height()){
+                 var percent = (wrapper.height() * 100) / img.height();
+                 $(this).css({"max-width": "" + 24 + "px"});
+            }
+            $(this).css({"max-height": "100%"});
+        }
+        */
+        //console.log(img.width());
+       // console.log(img.height());
+        //console.log(wrapper.width());
+       // console.log(wrapper.height());
+      });
+ 
+  });
+  
